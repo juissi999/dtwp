@@ -36,10 +36,6 @@ The hash_length parameter defines how many hex-values are taken from the beginni
 
 A raw calculation of collision probability assuming hash-function provides a random distribution would be
 
-
-$$
-P(collision) =\frac{1}{16^{hashlength}}
-$$
-
+![Collision probability equation](doc/p_collision.png)
 
 This is not a deep-analysis of all of the error-types but a simple estimation of how probable it is to find a match of a mistyped code/hash pair.
