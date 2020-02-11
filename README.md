@@ -39,3 +39,11 @@ A raw calculation of collision probability assuming hash-function provides a ran
 ![Collision probability equation](doc/p_collision.png)
 
 This is not a deep-analysis of all of the error-types but a simple estimation of how probable it is to find a match of a mistyped code/hash pair.
+
+#### Tests
+
+You can test the success rate of the method with a test. The test should cover most basic mistakes on code typing covered in Mathematical background-section.
+
+Run tests by typing:
+
+    python test.py
