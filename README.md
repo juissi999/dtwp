@@ -4,10 +4,31 @@
 
 dtwp stands for "dont type wrong please". It is a python library that attempts to solve the problem of people making typing mistakes on code input. The library provides tools to create codes with a trailing hash of various length and to check if inputted code is correct.
 
+##### example
+
+The informational part of the code is:
+
+528
+
+The code provided to user with checksum is:
+
+528<span style='color:green'>f</span>
+
+The user makes a typing error and types:
+
+52<span style='color:red'>9</span>f
+
+The program detects error, because f is not the checksum of 529
+
+The user retypes
+
+<span style='color:green'>528f</span>
+
+The program accepts the input and the original code 528 can be extracted and typing error does not occur.
+
 #### Installation
 
     git clone https://github.com/juissi999/dtwp.git
-
 
 #### Usage
 
