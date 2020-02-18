@@ -6,25 +6,22 @@ dtwp stands for "dont type wrong please". It is a python library that attempts t
 
 ##### example
 
-The informational part of the code is:
+    Informational part of the code is:
+    528
 
-528
+    The code provided to user with checksum is:
+    528f
 
-The code provided to user with checksum is:
+    User makes a typing error and types:
+    529f
 
-528<span style='color:green'>f</span>
+    Program detects an error, because f is not the checksum of 529, user retypes:
+    528d
 
-The user makes a typing error and types:
+    Program detects an error, because d is not checksum of 528, user retypes:
+    528f
 
-52<span style='color:red'>9</span>f
-
-The program detects error, because f is not the checksum of 529
-
-The user retypes
-
-<span style='color:green'>528f</span>
-
-The program accepts the input and the original code 528 can be extracted and typing error does not occur.
+    The program accepts the input and the original code 528 can be extracted and typing error does not occur.
 
 #### Installation
 
